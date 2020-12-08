@@ -61,6 +61,31 @@ document.getElementById("hide").style.display = "block";
 
 });
 
+//code by vinitha
+    document.getElementById("hide").addEventListener("click", function(){
 
+    
+    
+    while(document.getElementsByClassName("hoverNode").length > 0)
+    
+    {
+    
+    var spanNodes = document.getElementsByClassName("hoverNode");
+    
+    for (var i = 0; i < spanNodes.length; i++) {
+    
+    spanNodes[i].remove();
+    
+    }
+    
+    }
+    
+
+    
+    document.getElementById("highlight").style.display = "block";
+    
+    document.getElementById("hide").style.display = "none";
+    
+    });
 
 }
